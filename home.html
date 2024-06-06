@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .room-card {
+            margin-bottom: 20px;
+            height: 400px; /* Altura fixa para os cartões */
+        }
+        .room-card .card-img-top {
+            height: 200px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Ajusta a imagem para preencher o espaço disponível */
+        }
+        .navbar-custom {
+            background-color: #546A7B !important;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: #fff;
+        }
+        .room-card .card-title {
+            color: black; /* Cor das letras */
+            text-decoration: none; /* Remove sublinhado */
+        }
+        .room-card .card-title:hover {
+            color: black; /* Cor das letras ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-custom py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="./img/logo.PNG" alt="Logo" height="90" class="mr-2">
+                <h1 class="m-0"></h1>
+            </div>
+            <form class="form-inline" id="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar por sala..." aria-label="Pesquisar" id="searchInput">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <button class="btn btn-light ml-3">Perfil</button>
+        </div>
+    </header>
+    
+    <div class="container mt-4" id="roomContainer">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala1.jpg" class="card-img-top img-fluid" alt="Sala 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala de Madeira <span class="badge badge-primary">R$ 150/dia</span></h5>
+                        <p class="card-text">Sala espaçosa com mesa para 6 pessoas, ar condicionado e infraestrutura completa para reuniões e trabalho em equipe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala2.jpg" class="card-img-top img-fluid" alt="Sala 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala Cooperativa <span class="badge badge-primary">R$ 120/dia</span></h5>
+                        <p class="card-text">Sala com infraestrutura ampla, oferecendo internet robusta e um ambiente aconchegante e acolhedor, ideal para sessões de trabalho produtivas e confortáveis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala3.jpg" class="card-img-top img-fluid" alt="Sala 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala Individual <span class="badge badge-primary">R$ 80/dia</span></h5>
+                        <p class="card-text">Um espaço privativo equipado com tudo que você precisa para trabalhar de forma produtiva e confortável, incluindo internet de alta velocidade e uma atmosfera profissional.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais divs com class="col-md-4" conforme necessário -->
+            
+            <!-- Adicionando mais cards -->
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala4.jpg" class="card-img-top img-fluid" alt="Sala 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala Criativa <span class="badge badge-primary">R$ 100/dia</span></h5>
+                        <p class="card-text">Espaço inspirador com decoração criativa e ambiente propício para brainstorming e projetos inovadores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala5.jpg" class="card-img-top img-fluid" alt="Sala 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala Conforto <span class="badge badge-primary">R$ 90/dia</span></h5>
+                        <p class="card-text">Ambiente aconchegante e tranquilo, perfeito para momentos de concentração e foco.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala6.jpg" class="card-img-top img-fluid" alt="Sala 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala Colaborativa <span class="badge badge-primary">R$ 110/dia</span></h5>
+                        <p class="card-text">Espaço versátil projetado para promover a colaboração e troca de ideias entre profissionais de diferentes áreas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Novos cards adicionados -->
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala7.jpg" class="card-img-top img-fluid" alt="Sala 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala Relax <span class="badge badge-primary">R$ 80/dia</span></h5>
+                        <p class="card-text">Ambiente tranquilo e relaxante, perfeito para uma pausa ou momentos de meditação.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala8.jpg" class="card-img-top img-fluid" alt="Sala 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala de Reunião <span class="badge badge-primary">R$ 200/dia</span></h5>
+                        <p class="card-text">Espaço ideal para reuniões e apresentações, com equipamentos de áudio e vídeo de alta qualidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="room-card card">
+                    <img src="./img/sala9.jpg" class="card-img-top img-fluid" alt="Sala 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala de Estudo <span class="badge badge-primary">R$ 70/dia</span></h5>
+                        <p class="card-text">Ambiente silencioso e propício para o estudo e a concentração, com biblioteca e acesso a materiais educacionais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 text-center">
+        <div class="container">
+            <span class="text-muted">Bianca Soares, Luan da Silva, Leonardo Torquato, Guilherme</span>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#searchForm').on('submit', function(e) {
+                e.preventDefault();
+                var searchTerm = $('#searchInput').val().toLowerCase();
+                $('.room-card').each(function() {
+                    var roomName = $(this).find('.card-title').text().toLowerCase();
+                    if (roomName.includes(searchTerm)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
