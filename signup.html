@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <img class="logo" src="img/logo.PNG" alt="foto logo">
+    <div class="signup-container">
+        <h2>Criar Conta</h2>
+        <input type="text" id="username" placeholder="Nome:">
+        <input type="text" id="signup-username" placeholder="Email:">
+        <input type="text" id="signup-username" placeholder="CPF:">
+        <input type="text" id="signup-username" placeholder="Telefone:">
+        <input type="password" id="signup-password" placeholder="Senha:">
+        <button onclick="createAccount()">Criar Conta</button>
+        <div class="error-message" id="signup-error-message">Account creation failed. Please try again.</div>
+        <div class="success-message" id="signup-success-message">Account created successfully!</div>
+    </div>
+
+    <script src="./js/signup.js"></script>
+</body>
+</html>
